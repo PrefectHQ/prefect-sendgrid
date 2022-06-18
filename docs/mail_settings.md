@@ -1,0 +1,1 @@
+::: prefect_sendgrid.mail_settings

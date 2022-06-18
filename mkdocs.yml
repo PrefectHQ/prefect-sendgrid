@@ -1,0 +1,85 @@
+site_name: prefect-sendgrid
+site_url: https://PrefectHQ.github.io/prefect-sendgrid
+repo_url: https://github.com/PrefectHQ/prefect-sendgrid
+edit_uri: /edit/main/docs/
+theme:
+  name: material
+  favicon: img/favicon.ico
+  palette:
+    primary: blue
+    accent: blue
+  icon:
+    repo: fontawesome/brands/github
+  logo:
+    img/prefect-logo-white.png
+  font:
+    text: Inter
+    code: Source Code Pro
+extra_css:
+    - stylesheets/extra.css
+markdown_extensions:
+    - admonition
+    - attr_list
+    - codehilite
+    - md_in_html
+    - meta
+    - pymdownx.highlight:
+        use_pygments: true
+    - pymdownx.superfences
+    - pymdownx.tabbed
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - docs/gen_ref_pages.py
+  - mkdocstrings:
+      handlers:
+        python:
+          rendering:
+            show_root_heading: True
+            show_object_full_path: False
+            show_category_heading: False
+            show_bases: False
+            show_signature: False
+            heading_level: 1
+      watch:
+        - prefect_sendgrid/
+        - README.md
+
+nav:
+    - Home: index.md
+    - Credentials: credentials.md
+    - Mail: mail.md
+    - Rest: rest.md
+    - Access Settings: access_settings.md
+    - Alerts: alerts.md
+    - Api Keys: api_keys.md
+    - Asm: asm.md
+    - Browsers: browsers.md
+    - Campaigns: campaigns.md
+    - Categories: categories.md
+    - Clients: clients.md
+    - Contactdb: contactdb.md
+    - Designs: designs.md
+    - Devices: devices.md
+    - Geo: geo.md
+    - Ips: ips.md
+    - Mail Settings: mail_settings.md
+    - Mailbox Providers: mailbox_providers.md
+    - Marketing: marketing.md
+    - Messages: messages.md
+    - Partner Settings: partner_settings.md
+    - Scopes: scopes.md
+    - Senders: senders.md
+    - Sso: sso.md
+    - Stats: stats.md
+    - Subusers: subusers.md
+    - Suppression: suppression.md
+    - Teammates: teammates.md
+    - Templates: templates.md
+    - Tracking Settings: tracking_settings.md
+    - User: user.md
+    - Validations: validations.md
+    - Verified Senders: verified_senders.md
+    - Whitelabel: whitelabel.md
+    
