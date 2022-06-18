@@ -11,9 +11,7 @@ url = ""
 routes = []
 
 rest_generator = RESTGenerator(
-    service_name,
-    base_directory=base_directory,
-    overwrite=overwrite
+    service_name, base_directory=base_directory, overwrite=overwrite
 )
 rest_generator.generate_endpoint_files(url, routes=routes)
 rest_generator.generate_docs_files()
